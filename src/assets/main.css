@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Inter, 'Noto Sans TC', 'sans-serif';
+  }
+}
+
+@layer components {
+  .submenu-open {
+    @apply pl-20 pb-3;
+  }
+
+  .submenu-close {
+    @apply absolute left-full top-0 z-10 mt-0 rounded-tr-lg rounded-br-lg px-2 py-5;
+  }
+}
