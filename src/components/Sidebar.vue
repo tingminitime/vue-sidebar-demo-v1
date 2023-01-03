@@ -112,14 +112,17 @@
     </ul>
     <!-- > Profile -->
     <div
-      class="fixed bottom-0 z-30 flex items-center gap-x-2 bg-darkblue px-2 py-2 transition-all duration-300"
+      class="fixed bottom-0 z-30 flex h-20 items-center gap-x-2 bg-darkblue px-3 py-2 transition-all duration-300"
       :class="[isHideSidebar ? 'w-[68px]' : 'w-72']"
     >
-      <div class="h-[52px] w-[52px] shrink-0">
+      <div
+        class="shrink-0 rounded-2xl bg-deepblue transition-all"
+        :class="[isHideSidebar ? 'h-10 w-10 p-2' : 'h-12 w-12']"
+      >
         <img
           src="https://i.pravatar.cc/128"
           alt=""
-          class="rounded-2xl bg-deepblue object-cover p-2"
+          class="rounded-md object-cover"
         />
       </div>
       <div
